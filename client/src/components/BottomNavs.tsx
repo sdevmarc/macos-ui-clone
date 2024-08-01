@@ -52,7 +52,7 @@ const Dock: React.FC = () => {
         <motion.div
             onMouseMove={(e) => mouseX.set(e.pageX)}
             onMouseLeave={() => mouseX.set(Infinity)}
-            className="relative top-[90%] left-[50%] translate-x-[-50%] px-[.6rem] h-[4.6rem] rounded-[1.4rem] backdrop-blur-[.3rem] bg-[#ffffff2f] border-[1px] border-gray-400 shadow-[0_15px_13px_-3px_rgba(0,0,0,0.3)] flex justify-center items-center gap-[.3rem]"
+            className="relative top-[88%] left-[50%] translate-x-[-50%] px-[.6rem] h-[4.6rem] rounded-[1.4rem] backdrop-blur-[.3rem] bg-[#ffffff2f] border-[1px] border-gray-400 shadow-[0_15px_13px_-3px_rgba(0,0,0,0.3)] flex justify-center items-center gap-[.3rem]"
         >
             {iconData.map((icon, i) => (
                 <AppIcon key={i} src={icon.src} alt={icon.alt} mouseX={mouseX} link={icon.link} />
